@@ -6,7 +6,7 @@ pipeline  {
         FE_SWR_CREDENTIALS_PASSWORD = credentials('fe-swr-credential-password')
         FE_SWR_URL = "registry.eu-west-0.prod-cloud-ocb.orange-business.com"
         FE_SWR_ORGANIZATION = "ernest"
-        DOCKER_IMAGENAME = "Yolov4-Object-Detection"
+        DOCKER_IMAGENAME = "yolov4-object-detection"
         
         
     }
