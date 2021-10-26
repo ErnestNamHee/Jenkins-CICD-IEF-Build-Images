@@ -3,4 +3,5 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && apt-get -y install git pkg-config libopencv-dev
 RUN cd /root && git clone https://github.com/AlexeyAB/darknet && cd darknet && sed -i 's/GPU=0/GPU=1/; s/CUDNN=0/CUDNN=1/; s/OPENCV=0/OPENCV=1/' Makefile && make
 COPY yolov4.weights /root/darknet/
+COPY test50.mp4 /root/darknet/
 WORKDIR /root/darknet
