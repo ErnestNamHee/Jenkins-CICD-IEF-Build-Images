@@ -6,3 +6,4 @@ WORKDIR /root/darknet
 #COPY ./yolov4.weights /root/darknet/
 #COPY ./test50.mp4 /root/darknet/
 #COPY . /root/darknet/
+CMD ["/bin/bash"]
