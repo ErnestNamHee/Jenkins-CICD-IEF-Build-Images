@@ -29,7 +29,10 @@ pipeline  {
         stage ('Deploy to FE CCE') {
             steps {
                 echo "Deploy to CCE"
-                sh "kubectl cluster-info"
+                script{
+                    kubernetesDeploy (configs: 'AppsDeployment.yaml', kubeconfigId: 'CCE Kubeconfig')
+                }
+                
  
                         
                 }
