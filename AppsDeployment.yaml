@@ -21,15 +21,9 @@ spec:
        env:
        volumeMounts:
 
-
-
      imagePullSecrets:
        - name: default-secret
      volumes:
      - name: pvc-data
        persistentVolumeClaim:
          claimName: cce-sfs-import-ernest-cce-pvc
-
-~
-~
-~
