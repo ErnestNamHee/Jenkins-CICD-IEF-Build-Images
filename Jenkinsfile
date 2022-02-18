@@ -29,7 +29,7 @@ pipeline  {
         stage ('Deploy to FE CCE') {
             steps {
                 echo "Deploy to CCE"
-                sh "kubectl get all"
+                sh "kubectl cluster-info"
  
                         
                 }
