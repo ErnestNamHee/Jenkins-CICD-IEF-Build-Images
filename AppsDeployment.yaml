@@ -15,7 +15,7 @@ spec:
        app: video-analyzer
    spec:
      containers:
-     - image: registry.eu-west-0.prod-cloud-ocb.orange-business.com/ernest/yolov4-object-detection:latest
+     - image: registry.eu-west-0.prod-cloud-ocb.orange-business.com/ernest/yolov4-object-detection
        imagePullPolicy: Always
        name: video-analyzer
        env:
