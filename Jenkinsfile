@@ -27,6 +27,7 @@ pipeline  {
             }
         }
         stage ('Deploy to FE CCE') {
+            agent { label 'slave-node'}
             steps {
                 echo "Deploy to CCE"
                 script{
